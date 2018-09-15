@@ -1,4 +1,4 @@
-# tictactoe
+# tictactoe [![Build Status](https://travis-ci.org/nomisRev/tictactoe.svg?branch=master)](https://travis-ci.org/nomisRev/tictactoe)
 
 ## Work in progress
  To run and play run `stack build && stack exec tictactoe-exe` from terminal.
