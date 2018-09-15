@@ -6,9 +6,9 @@
  Test can be run with `stack test`.
  
  ### TODOs (What is not there or not working yet)
-    * Finishing the game: deciding draw or winner. (Winning logic is implemented but not wired properly yet)
-    * Bug: seems to be something wrong with PositionTaken logic.
-    * Make game configurable and change logic accordingly.
-    * Clean up imports as described [here](https://wiki.haskell.org/Import_modules_properly)
-    * Wire up in backend with [Servant](https://github.com/haskell-servant/servant)
-    * Add persistance using [persistent](https://www.yesodweb.com/book/persistent)
+   * Finishing the game: deciding draw or winner. (Winning logic is implemented but not wired properly yet)
+   * Bug: seems to be something wrong with PositionTaken logic.
+   * Make game configurable and change logic accordingly.
+   * Clean up imports as described [here](https://wiki.haskell.org/Import_modules_properly)
+   * Wire up in backend with [Servant](https://github.com/haskell-servant/servant)
+   * Add persistance using [persistent](https://www.yesodweb.com/book/persistent)
