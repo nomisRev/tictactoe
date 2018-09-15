@@ -1,0 +1,5 @@
+.stack-work/
+tictactoe.cabal
+*~
+.vscode
+.idea
