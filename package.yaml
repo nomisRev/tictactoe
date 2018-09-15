@@ -1,7 +1,7 @@
 name:                tictactoe
 version:             0.1.0.0
 github:              "githubuser/nomisRev"
-license:             Apache 2
+license:             Apache2
 author:              "Vergauwen Simon"
 maintainer:          "example@example.com"
 copyright:           "2018 Vergauwen Simon"
