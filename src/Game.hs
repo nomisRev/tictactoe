@@ -42,26 +42,13 @@ newGame :: GameState
 newGame = InProgress emptyBoard
 
 -- |Play a turn. Instead of BoardState this should be GameState w errors, and shouldn't return value here.
-playTurn :: Pos -> Stone -> BoardState (Maybe Stone)
-playTurn pos s = (putStone pos s) >> whoWon pos
-
 playTurn' :: Pos -> Stone -> BoardState ()
 playTurn' pos s = (putStone pos s) >> whoWon pos >>= didWin
-  -- where didWin mstone = modify (\state -> case mstone of
-  --                                        (Just s') -> Won (view board state) s'
-  --                                        Nothing -> state)
 
 didWin :: Maybe Stone -> BoardState ()
 didWin mstone = modify (\state -> case mstone of
   (Just s') -> Won (view board state) s'
   Nothing -> state)
-  -- do
-  -- _ <- putStone pos s
-  -- mw <- fmap whoWon (possibleWins pos)
-  -- state <- get
-  -- case mw of
-  --   (Just s') -> put $ Won (view board state) s'
-  --   Nothing -> return ()
 
 -- |Puts a player stone @ a given position.
 putStone :: Pos -> Stone -> BoardState ()
